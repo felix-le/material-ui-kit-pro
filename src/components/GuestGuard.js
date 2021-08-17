@@ -24,10 +24,6 @@ function GuestGuard({ children }) {
   const account = {
     ...defaultAccount,
   };
-  console.log(
-    '🚀 ~ file: GuestGuard.js ~ line 25 ~ GuestGuard ~ account',
-    account
-  );
 
   if (account.user) {
     return <Redirect to='/app/account' />;
