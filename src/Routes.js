@@ -15,22 +15,22 @@ const routesConfig = [
   {
     exact: true,
     path: '/404',
-    component: () => lazy(() => import('src/views/pages/Error404View')),
+    component: lazy(() => import('src/views/pages/Error404View')),
   },
   {
     exact: true,
     path: '/login',
-    component: () => lazy(() => import('src/views/auth/LoginView')),
+    component: lazy(() => import('src/views/auth/LoginView')),
   },
   {
     exact: true,
     path: '/login-unprotected',
-    component: () => lazy(() => import('src/views/auth/LoginView')),
+    component: lazy(() => import('src/views/auth/LoginView')),
   },
   {
     exact: true,
     path: '/register',
-    component: () => lazy(() => import('src/views/auth/RegisterView')),
+    component: lazy(() => import('src/views/auth/RegisterView')),
   },
   {
     exact: true,
@@ -44,7 +44,7 @@ const routesConfig = [
     routes: [
       {
         exact: true,
-        path: '/app',
+        path: '/',
         component: () => <Redirect to='/app/reports/dashboard' />,
       },
       {
@@ -62,7 +62,7 @@ const routesConfig = [
   {
     path: '/docs',
     layout: DocsLayout,
-    routest: [
+    routes: [
       {
         exact: true,
         path: '/docs',
