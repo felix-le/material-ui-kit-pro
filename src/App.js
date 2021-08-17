@@ -10,7 +10,7 @@ import {
   ThemeProvider,
 } from '@material-ui/core';
 import ScrollReset from 'src/components/ScrollReset';
-import useSettings from 'src/hooks/useSettings';
+// import useSettings from 'src/hooks/useSettings';
 import rtl from 'jss-rtl';
 import Routes from 'src/Routes';
 

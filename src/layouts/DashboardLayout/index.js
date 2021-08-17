@@ -1,5 +1,10 @@
-const DashboardLayout = () => {
-  return <div>this is dashboardLayout</div>;
+const DashboardLayout = ({ children }) => {
+  return (
+    <>
+      <h1>dashboard layout</h1>
+      <div className='content'>{children}</div>
+    </>
+  );
 };
 
 export default DashboardLayout;
