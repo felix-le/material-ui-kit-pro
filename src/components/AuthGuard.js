@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function AuthGuard({ children }) {
@@ -33,4 +33,4 @@ AuthGuard.propTypes = {
   children: PropTypes.any,
 };
 
-export default AuthGuard;
+export default withRouter(AuthGuard);
