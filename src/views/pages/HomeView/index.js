@@ -1,5 +1,18 @@
+import { makeStyles } from '@material-ui/core';
+import Page from 'src/components/Page';
+import Hero from './Hero';
+const useStyles = makeStyles(() => ({
+  root: {},
+}));
+
 const HomeView = () => {
-  return <div>HomeView</div>;
+  const classes = useStyles();
+
+  return (
+    <Page className={classes.root} title='home'>
+      <Hero />
+    </Page>
+  );
 };
 
 export default HomeView;
